@@ -1,4 +1,7 @@
 /*COLOUR CODES*/
+/*Olive green #445626*/
+
+
 
 /* === GLOBAL STYLES ================================= */
 
@@ -10,13 +13,13 @@
 	box-sizing: inherit;
 }
 html {
-	/*font-family: Avenir, Nunito, sans serif;*/
+	font-family: Source Sans Pro, Helvetica, sans serif;
 	font-size:14px;
 	box-sizing: border-box;
+	color:#000000;
 }
 a {
 	text-decoration: none;
-
 }
 ul {
 	list-style:none;
@@ -26,10 +29,10 @@ img {
 	padding:35px 0;
 }
 
-h1 {
+/*h1 {
 	font-size: ;
 	font-weight: ;
-}
+}*/
 h2 {
 	/*font-family: adobe-garamond-pro, serif;*/
 	/*font-weight: 400;*/
@@ -80,13 +83,16 @@ button i:hover {
 body {
 	background:#f4f4f4;
 }
+
+
+  /*=== end global styles ================================*/
 /* === HEADER STYLES ============================================================  */
 
 header {
-	/*background: #ff00ff;*/
+	background: rgba(100,100,100, 0.5);
 	width:100%;
 	/*height: 5rem;*/
-	z-index:1;
+	/*z-index:1;*/
 }
 header a {
 	color:#ffffff;
@@ -103,24 +109,15 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding:35px 0;
+	/*padding:35px 0;*/
+	z-index: 2;
 }
 .nav-brand {	
 	width:100px;
 }
-
-/*.menu-icons i {
-	font-size:22px;
-	color:#ffffff;
-	cursor: pointer;
-}*/
-/*.close i {
-	color:#ff00ff;
-}*/
 .nav-list {
 	width:100%;
 	align-content: right;
-	/*flex-direction: column;*/
 	justify-content: center;
 	z-index: 1500;
 }
@@ -144,23 +141,36 @@ nav {
 
  /*=== END HEADER STYLES ===============================================================*/
  /*=== START BODY STYLES ============================================================ */
-body
-section
+
+/*body*/
+
+/*section*/
+
 .hero {
-	background-image: ;
-	padding:0 0 75px 0px;
-	max-height:100vh;
+	background-image: url('/imgs/meg-willis-website.jpg');
+	/*background: rgba(68,86,38, 0.5);*/
+	/*padding:0 0 75px 0px;*/
+	height:50vh;
+	
+	background-repeat: no-repeat;
+  	background-size: auto;
+  	/*z-index: -1;*/
 }
-.hero a
+/*.hero a
 .hero h1, h2
 .hero h2
+*/
+ /*--- @ HOME --------------------------------------*/
 
+ .bookings_announcement {
+ 	background:red;
+ }
 
  /*=== END BODY STYLES ============================================================ */
  /*=== START FOOTER STYLES ============================================================ */
 
 footer {
-	background: #383838;
+	background: rgba(68,86,38, 0.5);
 	/*padding:35px 15px;*/
 	text-align: center;
 	color:#ffffff;
