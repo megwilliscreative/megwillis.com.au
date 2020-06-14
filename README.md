@@ -1,2 +1,0 @@
-# MWC-JAMstack
- portoflio
