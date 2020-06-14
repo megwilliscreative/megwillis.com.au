@@ -6,11 +6,13 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
-    <%= stylesheet_link_tag "site" %>
+    <title><%= current_page.data.title || "Middleman" %> Meg Willis </title>
+    <%= stylesheet_link_tag "styles" %>
     <%= javascript_include_tag "site" %>
   </head>
   <body>
+    <%= partial "partials/header" %>
     <%= yield %>
+    <%= partial "partials/footer" %>
   </body>
 </html>
