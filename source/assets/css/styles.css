@@ -1,5 +1,5 @@
 /*COLOUR CODES*/
-/*Olive green #445626*/
+	/*Olive green #445626*/
 
 
 
@@ -47,7 +47,10 @@ h3 {
 	font-size: 22px;
 	line-height: 1.3em;
 }
-
+code {
+	color:white;
+	background-color:#f0f !important;
+}
 button {
 	color:#ffffff;
 	background: #C6131E;
@@ -139,32 +142,17 @@ nav {
 }
 
 
- /*=== END HEADER STYLES ===============================================================*/
- /*=== START BODY STYLES ============================================================ */
-
-/*body*/
-
-/*section*/
-
-.hero {
-	background-image: url('/assets/imgs/meg-willis-website.jpg');
-	/*background: rgba(68,86,38, 0.5);*/
-	/*padding:0 0 75px 0px;*/
-	height:50vh;
-	
-	background-repeat: no-repeat;
-  	background-size: auto;
-  	/*z-index: -1;*/
-}
-/*.hero a
-.hero h1, h2
-.hero h2
-*/
- /*--- @ HOME --------------------------------------*/
-
- .bookings_announcement {
- 	background:olive;
- }
+/*- - @HOME - - */
+	.hero {
+		background-image: url('/assets/imgs/meg-willis-website.jpg');
+		height:75vh;
+		min-width:100%;
+		background-repeat: no-repeat;
+	  	background-size: auto;
+	}
+	.bookings_announcement {
+	 	background:olive;
+	 }
 
  /*=== END BODY STYLES ============================================================ */
  /*=== START FOOTER STYLES ============================================================ */
