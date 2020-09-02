@@ -147,7 +147,7 @@ nav {
 /*section*/
 
 .hero {
-	background-image: url('/imgs/meg-willis-website.jpg');
+	background-image: url('/assets/imgs/meg-willis-website.jpg');
 	/*background: rgba(68,86,38, 0.5);*/
 	/*padding:0 0 75px 0px;*/
 	height:50vh;
@@ -163,7 +163,7 @@ nav {
  /*--- @ HOME --------------------------------------*/
 
  .bookings_announcement {
- 	background:red;
+ 	background:olive;
  }
 
  /*=== END BODY STYLES ============================================================ */
