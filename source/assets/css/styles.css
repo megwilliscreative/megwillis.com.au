@@ -179,11 +179,12 @@ body {
 		margin:auto 0px;
 	}
 	.bookings_announcement {
-	 	background:olive;
+	 	background:white;
 	 	height: 10vh;
 	 }
 	.bookings_announcement h3 {
 		text-align: center;
+		color:olive;
 	}
 	.bookings_details {
 		background:#3F4122;
