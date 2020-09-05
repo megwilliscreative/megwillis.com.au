@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title || "Meg Willis" %></title>
+    <link rel="stylesheet" href="https://use.typekit.net/xyl4dix.css">
+    <!-- <script src="https://kit.fontawesome.com/c334506879.js" crossorigin="anonymous"></script> -->
+    <%= stylesheet_link_tag "/assets/css/styles" %>
+    <%= javascript_include_tag "/assets/css/site" %>
+    <!-- <link rel="icon"       type="image/png"       href="/imgs/favicon.png"> -->
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+
+</html>
