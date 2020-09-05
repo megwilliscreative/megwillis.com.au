@@ -37,6 +37,12 @@
 		background:#f4f4f4;
 		/*min-height: 100vh;*/
 	}
+	section {}
+	.container {
+		max-width: 1080px;
+		margin:0 auto;
+		/*border:solid green 2px;*/
+	}
 	.content {
 		/*object-fit: center;*/
 	}
@@ -99,80 +105,66 @@
 
 
 /*- - @HOME - - */
+	
 	.hero {
-		background-image: url('/assets/imgs/meg-willis-website.jpg');
-		height:90vh;
-		min-width:100%;
+		margin:auto 0;
+		background:olive;
+		height:100vh;
+		background-image: url("/assets/imgs/meg-willis-website.jpg");
+		/*background-image: url('https://www.w3schools.com/html/img_girl.jpg');*/
 		background-repeat: no-repeat;
-	  	/*background-size: auto;*/
-	  	/*border:lime 2px solid;*/
-	}
-	/*@media screens and only (max-width: 767px) {
-		.hero {
-		background-image: url('/assets/imgs/meg-willis-website-780px.jpg');
-	}*/
-	.hero h1 {
+		background-attachment: fixed;
+		background-size: cover;
 		font-family: 'Caveat', cursive;
-		font-size: 90px;
+		font-size:50px;
+	}
+	.hero h1 {
 		color:#ffffff;
-		line-height: 0.5em;
-		padding-bottom:15px;
-		text-shadow: 10px 10px 10px black;
+		/*margin-left:-75px;*/
+		line-height: .7em;
+		padding-bottom: 15px;
 	}
 	.hero h2 {
-		font-family: 'Open Sans', sans-serif;
-		font-size: 25px;
 		color:#ffffff;
-		font-weight: 700;
-		text-transform: uppercase;
-		line-height: 1em;
-		text-shadow: 10px 10px 10px black;
+		/*text-transform: uppercase;*/
+		line-height: .7em;
+		padding:2% 0;
 	}
 	.welcome_message {
-		text-align: left;
-		padding:10vw 5vw;
-		margin:auto 0px;
-		max-width: 500px;
+		max-width: 50%;
+		text-shadow: 0px 0px 30px black;
+		margin: 15% 0;
 	}
-	.bookings_announcement {
-	 	background:white;
-	 	height: 10vh;
-	 }
-	.bookings_announcement h3 {
-		text-align: center;
-		color:olive;
-		margin:auto 0;
-	 	width:100vw;
-	 	position:fixed;
-		bottom:0;
-		z-index: 999;
+	.bookings_details span {
+		font-family: 'Caveat', cursive;
+		font-size: 33px;
 	}
 	.bookings_details {
-		padding:2vh 0;
+		/*border:red 2px solid;*/
+		font-size: 18px;
+		color: white;
+		margin:5% 0;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 500;
 	}
-	.bookings_details p a {
-		font-weight: 600;
-		font-size: 22px;
-		color:#ff00ff;
+	.bookings_details a {
+		color:white;
 	}
-	.booking_details span {
-		font-family: 'Caveat', cursive !important;
+	.bookings_announcement {
+		position: fixed;
+		bottom:0;
+		width:100%;
+		text-align: center;
+		box-shadow: 10px 2px 30px #00000007;
+		z-index: 999;
+		background: #ffffff;
 	}
+
+
  /*=== END BODY STYLES ============================================================ */
- /*=== START FOOTER STYLES ============================================================ */
+ 
 
-footer {
-	background: rgba(68,86,38, 0.5);
-	/*padding:35px 15px;*/
-	text-align: center;
-	color:#ffffff;
-	/*margin-top:75px;*/
-}
-footer a {
-	color:#ffffff;
-	font-size: 14px;
-}
-
+/*=== START FOOTER STYLES ============================================================ */
 
  /*=== END FOOTER STYLES ============================================================ */
 
