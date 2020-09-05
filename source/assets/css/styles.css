@@ -88,84 +88,94 @@ body {
 	min-height: 100vh;
 }
 .content {
-
 }
 
 
   /*=== end global styles ================================*/
 /* === HEADER STYLES ============================================================  */
 
-header {
-	background: rgba(100,100,100, 0.5);
-	width:100%;
-	/*height: 5rem;*/
-	/*z-index:1;*/
-}
-header a {
-	color:#ffffff;
-}
+	header {
+		background: rgba(100,100,100, 0.5);
+		width:100%;
+		/*height: 5rem;*/
+		/*z-index:1;*/
+	}
+	header a {
+		color:#ffffff;
+	}
 
-.container {
-	width:100%;
-	max-width:1280px;
-	margin: 0 auto;
-	padding: 35px 0px;
-}
-nav {
-	width:100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	/*padding:35px 0;*/
-	z-index: 2;
-}
-.nav-brand {	
-	width:100px;
-}
-.nav-list {
-	width:100%;
-	align-content: right;
-	justify-content: center;
-	z-index: 1500;
-}
+	.container {
+		width:100%;
+		max-width:1280px;
+		margin: 0 auto;
+		padding: 35px 0px;
+	}
+	nav {
+		width:100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		/*padding:35px 0;*/
+		z-index: 2;
+	}
+	.nav-brand {	
+		width:100px;
+	}
+	.nav-list {
+		width:100%;
+		align-content: right;
+		justify-content: center;
+		z-index: 1500;
+	}
 
-.nav-list ul{
-	text-align: right;
-}
-.nav-item{
-	margin:35px 0;
-	display: inline;
-}
-.nav-link {
-	font-weight:700;
-	font-size:18px;
-	color:#ffffff;
-	cursor: pointer;
-	text-transform: uppercase;
-	padding:6px 10px;
-}
+	.nav-list ul{
+		text-align: right;
+	}
+	.nav-item{
+		margin:35px 0;
+		display: inline;
+	}
+	.nav-link {
+		font-weight:700;
+		font-size:18px;
+		color:#ffffff;
+		cursor: pointer;
+		text-transform: uppercase;
+		padding:6px 10px;
+	}
 
 
 /*- - @HOME - - */
 	.hero {
 		background-image: url('/assets/imgs/meg-willis-website.jpg');
-		height:75vh;
+		height:100vh;
 		min-width:100%;
 		background-repeat: no-repeat;
 	  	background-size: auto;
-	  	text-align: center;
+	  	/*text-align: center;*/
 	}
 	.hero h1 {
-		text-align: center;
+		/*text-align: center;*/
 		font-family: 'Caveat', cursive;
 		font-size: 90px;
 		color:#ffffff;
+		line-height: .5em;
 	}
 	.hero h2 {
-		text-align: center;
+		/*text-align: center;*/
 		font-family: 'Open Sans', sans-serif;
-		font-size: 18px;
+		font-size: 30px;
 		color:#ffffff;
+		font-weight: 700;
+		text-transform: uppercase;
+		line-height: 2em;
+	}
+	.welcome_message {
+		text-align: left;
+		padding:10vw 5vw;
+		margin:auto 0px;
+		/*background:black;*/
+		/*border:1px lime solid;*/
 	}
 	.bookings_announcement {
 	 	background:olive;
