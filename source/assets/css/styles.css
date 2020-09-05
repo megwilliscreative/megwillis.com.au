@@ -13,7 +13,7 @@
 	box-sizing: inherit;
 }
 html {
-	font-family: Source Sans Pro, Helvetica, sans serif;
+	font-family: Open Sans, Helvetica, sans serif;
 	font-size:14px;
 	box-sizing: border-box;
 	color:#000000;
@@ -26,7 +26,7 @@ ul {
 	list-style:none;
 }
 img {
-	width:100%;
+	/*width:100%;*/
 	padding:35px 0;
 }
 
@@ -86,10 +86,10 @@ button i:hover {
 }
 body {
 	background:#f4f4f4;
-	min-height: 100vh;
+	/*min-height: 100vh;*/
 }
 .content {
-	object-fit: center;
+	/*object-fit: center;*/
 }
 
 
@@ -150,33 +150,36 @@ body {
 /*- - @HOME - - */
 	.hero {
 		background-image: url('/assets/imgs/meg-willis-website.jpg');
-		height:80vh;
+		height:90vh;
 		min-width:100%;
 		background-repeat: no-repeat;
-	  	background-size: auto;
-	  	/*text-align: center;*/
-	  	/*object-fit: center;*/
+	  	/*background-size: auto;*/
+	  	/*border:lime 2px solid;*/
 	}
+	/*@media screens and only (max-width: 767px) {
+		.hero {
+		background-image: url('/assets/imgs/meg-willis-website-780px.jpg');
+	}*/
 	.hero h1 {
-		/*text-align: center;*/
 		font-family: 'Caveat', cursive;
 		font-size: 90px;
 		color:#ffffff;
-		line-height: .5em;
+		line-height: 0.5em;
+		padding-bottom:15px;
 	}
 	.hero h2 {
-		/*text-align: center;*/
 		font-family: 'Open Sans', sans-serif;
 		font-size: 25px;
 		color:#ffffff;
 		font-weight: 700;
 		text-transform: uppercase;
-		line-height: 2em;
+		line-height: 1em;
 	}
 	.welcome_message {
 		text-align: left;
 		padding:10vw 5vw;
 		margin:auto 0px;
+		max-width: 500px;
 	}
 	.bookings_announcement {
 	 	background:white;
@@ -185,12 +188,23 @@ body {
 	.bookings_announcement h3 {
 		text-align: center;
 		color:olive;
+		margin:auto 0;
+	 	width:100vw;
+	 	position:fixed;
+		bottom:0;
+		z-index: 999;
 	}
 	.bookings_details {
-		background:#3F4122;
-	 	height: 10vh;
+		padding:2vh 0;
 	}
-
+	.bookings_details p a {
+		font-weight: 600;
+		font-size: 22px;
+		color:#ff00ff;
+	}
+	.booking_details span {
+		font-family: 'Caveat', cursive !important;
+	}
  /*=== END BODY STYLES ============================================================ */
  /*=== START FOOTER STYLES ============================================================ */
 
