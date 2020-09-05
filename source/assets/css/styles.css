@@ -85,6 +85,7 @@ button i:hover {
 }
 body {
 	background:#f4f4f4;
+	min-height: 100vh;
 }
 .content {
 
