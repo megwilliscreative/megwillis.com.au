@@ -150,9 +150,18 @@ nav {
 		background-repeat: no-repeat;
 	  	background-size: auto;
 	}
+	.hero h1 {
+		text-align: center;
+	}
+	.hero h2 {
+text-align: center;
+	}
 	.bookings_announcement {
 	 	background:olive;
 	 }
+	.bookings_announcement h3 {
+		text-align: center;
+	}
 
  /*=== END BODY STYLES ============================================================ */
  /*=== START FOOTER STYLES ============================================================ */
