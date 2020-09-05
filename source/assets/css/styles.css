@@ -34,7 +34,7 @@
 	}
 
 	body {
-		background:#f4f4f4;
+		background:olive;
 		/*min-height: 100vh;*/
 	}
 	section {}
@@ -162,7 +162,7 @@
 
 @media only screen and (max-width: 767px) {
 	.container {max-width:90%;}
-	.hero {padding:35px 0;}
+	/*.hero {padding:35px 0;}*/
 	.hero h2 {font-size: 36px;}
 	.welcome_message {max-width: 100%;}
 /*show my face*/
