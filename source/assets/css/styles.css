@@ -2,98 +2,49 @@
 	/*Olive green #445626*/
 
 
-
 /* === GLOBAL STYLES ================================= */
 
-*,
-*::before, 
-*::after {
-	margin:0;
-	padding:0;
-	box-sizing: inherit;
-}
-html {
-	font-family: Open Sans, Helvetica, sans serif;
-	font-size:14px;
-	box-sizing: border-box;
-	color:#000000;
-}
-a {
-	text-decoration: none;
-	color:olive;
-}
-ul {
-	list-style:none;
-}
-img {
-	/*width:100%;*/
-	padding:35px 0;
-}
+	*,
+	*::before, 
+	*::after {
+		margin:0;
+		padding:0;
+		box-sizing: inherit;
+	}
+	html {
+		font-family: Open Sans, Helvetica, sans serif;
+		font-size:14px;
+		box-sizing: border-box;
+		color:#000000;
+	}
+	a {
+		text-decoration: none;
+		color:olive;
+	}
+	ul {
+		list-style:none;
+	}
+	img {
+		/*width:100%;*/
+		padding:35px 0;
+	}
+	code {
+		color:white;
+		background-color:#f0f !important;
+	}
 
-/*h1 {
-	font-size: ;
-	font-weight: ;
-}*/
-h2 {
-	/*font-family: adobe-garamond-pro, serif;*/
-	/*font-weight: 400;*/
-	/*font-style: normal;*/
-	/*font-size: 45px;*/
-	/*color: #000000!important;*/
-	/*line-height: .9em;*/
-	padding:15px 0;
-}
-h3 {
-	/*text-transform: uppercase;*/
-	font-size: 22px;
-	line-height: 1.3em;
-}
-code {
-	color:white;
-	background-color:#f0f !important;
-}
-button {
-	color:olive;
-	background: #ffffff;
-	padding: 6px 10px;
-	margin:15px 0px;
-	
-	font-weight: 500;
-	font-size:16px;
-	text-transform: uppercase;
-	border:0px;
-}
-button i {
-	/*color:red;*/
-	padding: 2px 0px 2px 15px;
-}
-button i:hover {
-	padding-left: 25px;
-}
-.btn-white {
-	background: white;
-	color:black;
-	text-transform: uppercase;
-	padding:8px 0;
-	width:125px;
-	border-radius: 6px;
-	margin:0 auto;
-	/*max-width:125px;*/
-	font-size: 16px;
-}
-.btn-white i:hover {
-	padding-left: 25px;
-}
-body {
-	background:#f4f4f4;
-	/*min-height: 100vh;*/
-}
-.content {
-	/*object-fit: center;*/
-}
+	body {
+		background:#f4f4f4;
+		/*min-height: 100vh;*/
+	}
+	.content {
+		/*object-fit: center;*/
+	}
 
 
   /*=== end global styles ================================*/
+
+
 /* === HEADER STYLES ============================================================  */
 
 	header {
@@ -166,6 +117,7 @@ body {
 		color:#ffffff;
 		line-height: 0.5em;
 		padding-bottom:15px;
+		text-shadow: 10px 10px 10px black;
 	}
 	.hero h2 {
 		font-family: 'Open Sans', sans-serif;
@@ -174,6 +126,7 @@ body {
 		font-weight: 700;
 		text-transform: uppercase;
 		line-height: 1em;
+		text-shadow: 10px 10px 10px black;
 	}
 	.welcome_message {
 		text-align: left;
