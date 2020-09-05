@@ -20,6 +20,7 @@ html {
 }
 a {
 	text-decoration: none;
+	color:olive;
 }
 ul {
 	list-style:none;
@@ -88,6 +89,7 @@ body {
 	min-height: 100vh;
 }
 .content {
+	object-fit: center;
 }
 
 
@@ -148,11 +150,12 @@ body {
 /*- - @HOME - - */
 	.hero {
 		background-image: url('/assets/imgs/meg-willis-website.jpg');
-		height:100vh;
+		height:80vh;
 		min-width:100%;
 		background-repeat: no-repeat;
 	  	background-size: auto;
 	  	/*text-align: center;*/
+	  	/*object-fit: center;*/
 	}
 	.hero h1 {
 		/*text-align: center;*/
@@ -164,7 +167,7 @@ body {
 	.hero h2 {
 		/*text-align: center;*/
 		font-family: 'Open Sans', sans-serif;
-		font-size: 30px;
+		font-size: 25px;
 		color:#ffffff;
 		font-weight: 700;
 		text-transform: uppercase;
@@ -174,14 +177,17 @@ body {
 		text-align: left;
 		padding:10vw 5vw;
 		margin:auto 0px;
-		/*background:black;*/
-		/*border:1px lime solid;*/
 	}
 	.bookings_announcement {
 	 	background:olive;
+	 	height: 10vh;
 	 }
 	.bookings_announcement h3 {
 		text-align: center;
+	}
+	.bookings_details {
+		background:#3F4122;
+	 	height: 10vh;
 	}
 
  /*=== END BODY STYLES ============================================================ */
@@ -192,7 +198,7 @@ footer {
 	/*padding:35px 15px;*/
 	text-align: center;
 	color:#ffffff;
-	margin-top:75px;
+	/*margin-top:75px;*/
 }
 footer a {
 	color:#ffffff;
