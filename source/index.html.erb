@@ -13,10 +13,8 @@ title: Meg Willis | Web Builder
 <section class="hero">
   <div class="container">
     <div class="content">
-      
-        
         <h2>Hey,</h2>
-        <h1>Im Meg, welcome!</h1>
+        <h1>Im Meg, <br>welcome!</h1>
         <h2>What are you up to?</h2>
         <button>
           Im building a business
@@ -27,15 +25,8 @@ title: Meg Willis | Web Builder
     </div>
   </div>
 </section>
+<%= partial "partials/headline" %>
 
-<!-- now taking bookings  -->
-<section class="bookings_announcement">
-  <div class="container">
-    <div class="content">
-      <h3>Now taking bookings for October</h3>
-    </div>
-  </div>
-</section>
 
 <!-- full width latest project or case study -->
 <section>
@@ -71,7 +62,11 @@ title: Meg Willis | Web Builder
 <section>
   <div class="container">
     <div>
-      CONTENT
+      <form>
+        <input type="email" name="Email" placeholder="Email">
+        <input type="text" name="fName" placeholder="First Name">
+        <input type="textarea" name="message" placeholder="What would you like to work on?">
+      </form>
     </div>
   </div>
 </section>

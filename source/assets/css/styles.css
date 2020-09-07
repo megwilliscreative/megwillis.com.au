@@ -1,6 +1,9 @@
 /*COLOUR CODES*/
 	/*Olive green #445626*/
 
+/*---  test area --- */
+
+
 
 /* === GLOBAL STYLES ================================= */
 
@@ -32,6 +35,7 @@
 		color:white;
 		background-color:#f0f !important;
 	}
+	nav {}
 
 	body {
 		background:olive;
@@ -42,16 +46,25 @@
 		max-width: 1080px;
 		margin:0 auto;
 		/*border:solid green 2px;*/
+		padding: 35px 0px;
 	}
 	.content {
 		/*object-fit: center;*/
+		border:2px blue dotted;
+	}
+	button {
+	color:olive;
+	background: #ffffff;
+	padding: 6px 10px;
+	margin:15px 0px;
+	
+	font-weight: 500;
+	font-size:16px;
+	text-transform: uppercase;
+	border:0px;
 	}
 
-
-  /*=== end global styles ================================*/
-
-
-/* === HEADER STYLES ============================================================  */
+	/* --- header styles -- */
 
 	header {
 		background: rgba(100,100,100, 0.5);
@@ -63,46 +76,48 @@
 		color:#ffffff;
 	}
 
-	.container {
-		width:100%;
-		max-width:1280px;
-		margin: 0 auto;
-		padding: 35px 0px;
-	}
 	nav {
 		width:100%;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		/*padding:35px 0;*/
-		z-index: 2;
+		z-index: 999;
+		border:yellow 2px teal;
 	}
-	.nav-brand {	
-		width:100px;
+	.nav_brand {	
+		/*width:100px;*/
+		border:yellow 2px solid;
+		margin:0;
+		padding:0;
 	}
-	.nav-list {
+	.nav_list {
 		width:100%;
 		align-content: right;
 		justify-content: center;
 		z-index: 1500;
+		border:2px blue solid;
 	}
 
-	.nav-list ul{
+	.nav_list ul{
 		text-align: right;
 	}
-	.nav-item{
-		margin:35px 0;
+	.nav_item{
+		/*margin:35px 0;*/
 		display: inline;
+		border:2px red solid;
 	}
-	.nav-link {
+	.nav_link {
 		font-weight:700;
 		font-size:18px;
 		color:#ffffff;
 		cursor: pointer;
 		text-transform: uppercase;
 		padding:6px 10px;
+		border:2px blue solid;
 	}
 
+  /*=== end global styles ================================*/
 
 /*- - @HOME - - */
 	
@@ -110,14 +125,13 @@
 		margin:auto 0;
 		background:olive;
 		min-height: 100%;
-		height:100vh;
+		/*height:100vh;*/
 		background-image: url("/assets/imgs/meg-willis-website.jpg");
-		/*background-image: url('https://www.w3schools.com/html/img_girl.jpg');*/
 		background-repeat: no-repeat;
-		background-attachment: fixed;
+		/*background-attachment: fixed;*/
 		background-size: cover;
 		font-family: 'Caveat', cursive;
-		font-size:50px;
+		font-size:40px;
 	}
 	.hero h1 {
 		color:#ffffff;
@@ -138,10 +152,10 @@
 	}
 	.bookings_details span {
 		font-family: 'Caveat', cursive;
-		font-size: 33px;
+		font-size: 22px;
 	}
 	.bookings_details {
-		/*border:red 2px solid;*/
+		border:red 2px solid;
 		font-size: 18px;
 		color: white;
 		margin:5% 0;
@@ -152,25 +166,34 @@
 		color:white;
 	}
 	.bookings_announcement {
-		position: fixed;
-		bottom:0;
+		margin:0;
 		width:100%;
 		text-align: center;
 		box-shadow: 10px 2px 30px #00000007;
-		z-index: 999;
 		background: #ffffff;
+		
+	}
+	.bookings_announcement .container {
+		/*margin:0;*/
+		padding:10px 0;
+	}
+	header .nav_brand img{
+		padding:0;
+	}
+	header .container {
+		padding:10px;
 	}
 
-@media only screen and (max-width: 767px) {
-	.container {max-width:90%;}
-	/*.hero {padding:35px 0;}*/
-	.hero h2 {font-size: 36px;}
-	.welcome_message {max-width: 100%;}
-/*show my face*/
-	.hero {background-position-x:50%;}
-	
+	@media only screen and (max-width: 767px) {
+		.container {max-width:90%;}
+		/*.hero {padding:35px 0;}*/
+		.hero h2 {font-size: 36px;}
+		.welcome_message {max-width: 100%;}
+	/*show my face*/
+		.hero {background-position-x:50%;}
+		
 
-}
+	}
  /*=== END BODY STYLES ============================================================ */
  
 
