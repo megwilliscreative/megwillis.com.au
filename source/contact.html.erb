@@ -1,0 +1,35 @@
+<style type="text/css">
+.site_notice {
+	/*display: none;*/
+	position: fixed;
+	bottom: 0;
+	left:0;
+	padding:35px;
+	background: #ffffff;
+	z-index: 999;
+	}
+
+</style>
+
+<section>
+	<div class="container">
+		
+		<form class="email-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+		  <div hidden aria-hidden="true">
+		    <label>
+		      Don’t fill this out if you're human: 
+		      <input name="bot-field" />
+		    </label>
+		  </div>
+		  <label for="email">Your email address</label>
+		  <div>
+		    <input type="email" name="email" placeholder="Email"  id="email" required />
+		    <button type="submit">Subscribe</button>
+		  </div>
+		</form>
+
+
+	</div>
+
+</section>
+
