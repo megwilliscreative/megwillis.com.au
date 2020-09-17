@@ -46,6 +46,14 @@
 	.content {
 		/*object-fit: center;*/
 	}
+	.site_notice {
+		position: fixed;
+		bottom: 0;
+		left:0;
+		padding:35px;
+		background: #ffffff;
+		z-index: 999;
+	}
 
 
   /*=== end global styles ================================*/
@@ -161,22 +169,22 @@
 		background: #ffffff;
 	}
 
-@media only screen and (max-width: 767px) {
-	.container {max-width:90%;}
-	/*.hero {padding:35px 0;}*/
-	.hero h2 {font-size: 36px;}
-	.welcome_message {max-width: 100%;}
-/*show my face*/
-	.hero {background-position-x:50%;}
+	@media only screen and (max-width: 767px) {
+		.container {max-width:90%;}
+		/*.hero {padding:35px 0;}*/
+		.hero h2 {font-size: 36px;}
+		.welcome_message {max-width: 100%;}
+	/*show my face*/
+		.hero {background-position-x:50%;}
 	
 
-}
+	}
  /*=== END BODY STYLES ============================================================ */
  
 
 /*=== START FOOTER STYLES ============================================================ */
 
- /*=== END FOOTER STYLES ============================================================ */
+ 	/*=== END FOOTER STYLES ============================================================ */
 
 
 

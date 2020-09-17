@@ -1,0 +1,32 @@
+<!-- <section>
+	<div class="container">
+		<form name="contact" method="POST" data-netlify="true" action="">
+			<p><input type="text" name="name" placeholder="Your Name" /></p>
+			<p><input type="email" name="email" placeholder="Your Email" /></p>
+			<p><textarea name="message" placeholder="Your Message"></textarea></p>
+			<p><button type="submit">Send Message</button></p>
+		</form>
+	</div>
+</section> -->
+
+<section>
+	<div class="container">
+		
+		<form class="email-form" name="newsletter" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+		  <div hidden aria-hidden="true">
+		    <label>
+		      Don’t fill this out if you're human: 
+		      <input name="bot-field" />
+		    </label>
+		  </div>
+		  <label for="email">Your email address</label>
+		  <div>
+		    <input type="email" name="email" placeholder="Email"  id="email" required />
+		    <button type="submit">Subscribe</button>
+		  </div>
+		</form>
+
+
+	</div>
+
+</section>
