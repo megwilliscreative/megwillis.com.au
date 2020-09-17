@@ -1,3 +1,8 @@
 [build]
   base = "."
   functions = "./assets/js"
+
+[[redirects]]
+  from = "/*"
+  to = "/uh-oh.html"
+  status = 200

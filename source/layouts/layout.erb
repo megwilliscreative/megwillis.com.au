@@ -10,32 +10,27 @@
     <title><%= current_page.data.title || "Meg Willis" %></title>
     <link rel="stylesheet" href="https://use.typekit.net/xyl4dix.css">
     <!-- <script src="https://kit.fontawesome.com/c334506879.js" crossorigin="anonymous"></script> -->
-   
-   <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
-
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-59835286-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-59835286-2');
-</script>
-
-
     <%= stylesheet_link_tag "/assets/css/styles" %>
-    <%= javascript_include_tag "/assets/js/site" %>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-59835286-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-59835286-2');
+    </script>
+
     <!-- <link rel="icon"       type="image/png"       href="/imgs/favicon.png"> -->
   </head>
 
   <body>
-      
       <%= partial "partials/header" %>
       <%= yield %>
       <%= partial "partials/footer" %>
-
 
       <div class="site_notice">
         <ul>
@@ -45,6 +40,8 @@
           </li>
         </ul>
       </div>
+
+      <%= javascript_include_tag "/assets/js/site.js" %>
   </body>
 
 </html>
