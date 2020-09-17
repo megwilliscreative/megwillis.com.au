@@ -1,20 +1,32 @@
-require('dotenv').config()
-const fetch = require('node-fetch')
-const { EMAIL_TOKEN } = process.env
+require('dotenv').config();
+const fetch = require('node-fetch');
+
+const API_KEY = process.env.API_KEY;
+const USERNAME = process.env.USERNAME;
+
 exports.handler = async event => {
-  const email = JSON.parse(event.body).payload.email
-  console.log(`Recieved a submission: ${email}`)
-  return fetch('https://api.buttondown.email/v1/subscribers', {
-    method: 'POST',
-    headers: {
-      Authorization: `Token ${EMAIL_TOKEN}`,
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ email }),
-  })
-    .then(response => response.json())
-    .then(data => {
-      console.log(`Submitted to Buttondown:\n ${data}`)
+    const formFields = JSON.parse(event.body).payload;
+    const email = formFields.email;
+    const mailList = 'insertListName';
+
+    //Madmini account details
+    const params = {
+        api_key: API_KEY,
+        username: USERNAME,
+    };
+
+    console.log(`Recieved a submission: ${email}`);
+
+    return fetch('https://api.madmimi.com/audience_lists/' + mailList + '/add?email=' + email, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(params),
     })
-    .catch(error => ({ statusCode: 422, body: String(error) }))
-}
+        .then(response => response.json())
+        .then(data => {
+            console.log(`Submitted to MadMini:\n ${data}`);
+        })
+        .catch(error => ({statusCode: 422, body: String(error)}));
+};
