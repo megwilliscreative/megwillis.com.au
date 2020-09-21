@@ -3,6 +3,8 @@
 .DS_Store
 .sass-cache
 build/
+.idea
+*.iml
 
 gemfile
 config.rb
