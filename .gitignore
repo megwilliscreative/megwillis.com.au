@@ -5,3 +5,7 @@
 build/
 .idea
 *.iml
+
+gemfile
+config.rb
+gemfile.lock
