@@ -6,7 +6,8 @@ const API_KEY = process.env.MIMI_API_KEY;
 const USERNAME = process.env.MIMI_USER;
 const MAILLIST = process.env.MIMI_MAILLIST;
 
-exports.handler = async event => {
+exports.handler = function(event, context, callback) {
+    // your server-side functionality
     const formFields = JSON.parse(event.body).payload;
     const email = formFields.email;
 
@@ -31,3 +32,9 @@ exports.handler = async event => {
         })
         .catch(error => ({statusCode: 422, body: String(error)}));
 };
+
+
+
+
+
+
