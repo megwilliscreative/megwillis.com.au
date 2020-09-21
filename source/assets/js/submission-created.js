@@ -2,9 +2,9 @@ require('dotenv').config();
 const fetch = require('node-fetch');
 
 //These are the MadMini account details that you need to setup in Netlify so they are available to this code
-const API_KEY = process.env.API_KEY;
-const USERNAME = process.env.USERNAME;
-const MAILLIST = process.env.MAILLIST;
+const API_KEY = process.env.MIMI_API_KEY;
+const USERNAME = process.env.MIMI_USER;
+const MAILLIST = process.env.MIMI_MAILLIST;
 
 exports.handler = async event => {
     const formFields = JSON.parse(event.body).payload;
