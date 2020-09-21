@@ -3,7 +3,15 @@
 
 /*---  test area --- */
 
-
+.site_notice {
+	/*display: none;*/
+	position: fixed;
+	bottom: 0;
+	left:0;
+	padding:35px;
+	background: #ffffff;
+	z-index: 999;
+	}	
 
 /* === GLOBAL STYLES ================================= */
 
