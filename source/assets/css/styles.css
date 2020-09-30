@@ -4,12 +4,12 @@
 /*---  test area --- */
 
 .site_notice {
-	/*display: none;*/
+	display: none;
 	position: fixed;
 	bottom: 0;
 	left:0;
 	padding:35px;
-	background: #ffffff;
+	background: #313131;
 	z-index: 999;
 	}	
 /* === FONTS === */
@@ -38,6 +38,13 @@
 		box-sizing: border-box;
 		color:#000000;
 	}
+	h3 {
+		color: #313131;
+		text-transform: uppercase;
+		font-size: 18px;
+		font-family: Muli, Helvetica, sans-serif;
+		font-weight: bolder;
+	}
 	a {
 		text-decoration: none;
 		color:olive;
@@ -56,7 +63,7 @@
 	nav {}
 
 	body {
-		background:olive;
+		/*background:olive;*/
 		/*min-height: 100vh;*/
 	}
 	section {}
@@ -68,19 +75,20 @@
 	}
 	.content {
 		/*object-fit: center;*/
-		border:2px blue dotted;
+		/*border:2px blue dotted;*/
 	}
 	button {
-	color:olive;
-	background: #ffffff;
-	padding: 6px 10px;
-	margin:15px 0px;
-	
-	font-weight: 500;
-	font-size:16px;
-	text-transform: uppercase;
-	border:0px;
+		color:olive;
+		background: #ffffff;
+		padding: 6px 10px;
+		margin:15px 0px;
+		
+		font-weight: 500;
+		font-size:16px;
+		text-transform: uppercase;
+		border:0px;
 	}
+	
 
 	/* --- header styles -- */
 
@@ -93,46 +101,55 @@
 	header a {
 		color:#ffffff;
 	}
-
+	.main_nav {
+		display: grid;
+		grid-template-columns: repeat(7,1fr);
+		align-items: center;
+		/*justify-content: space-between;*/
+		text-align: center;
+	}
+	.nav_logo {
+		/*grid-col:;*/
+	}
 	nav {
 		width:100%;
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		/*padding:35px 0;*/
 		z-index: 999;
-		border:yellow 2px teal;
+		/*border:yellow 2px teal;*/
 	}
 	.nav_brand {	
 		/*width:100px;*/
-		border:yellow 2px solid;
+		/*border:yellow 2px solid;*/
 		margin:0;
 		padding:0;
 	}
-	.nav_list {
+	/*	.nav_list {
 		width:100%;
 		align-content: right;
 		justify-content: center;
 		z-index: 1500;
 		border:2px blue solid;
-	}
-
+	}*/
+	/*
 	.nav_list ul{
 		text-align: right;
-	}
+	}*/
 	.nav_item{
 		/*margin:35px 0;*/
-		display: inline;
-		border:2px red solid;
+		/*display: inline;*/
+		/*border:2px red solid;*/
 	}
-	.nav_link {
+	/*.nav_link {*/
+	.nav_item a {
 		font-weight:700;
 		font-size:18px;
 		color:#ffffff;
 		cursor: pointer;
 		text-transform: uppercase;
 		padding:6px 10px;
-		border:2px blue solid;
+		/*border:2px blue solid;*/
 	}
 
   /*=== end global styles ================================*/
@@ -143,10 +160,8 @@
 		margin:auto 0;
 		background:olive;
 		min-height: 100%;
-		/*height:100vh;*/
 		background-image: url("/assets/imgs/meg-willis-website.jpg");
 		background-repeat: no-repeat;
-		/*background-attachment: fixed;*/
 		background-size: cover;
 		font-family: 'Caveat', cursive;
 		font-size:40px;
@@ -155,7 +170,7 @@
 		color:#ffffff;
 		font-family: 'rockness';
 		/*margin-left:-75px;*/
-		line-height: .7em;
+		line-height: 1.7em;
 		padding-bottom: 15px;
 	}
 	.hero h2 {
@@ -217,8 +232,60 @@
  
 
 /*=== START FOOTER STYLES ============================================================ */
+footer {
+	background: #F7F7F7;
+	margin:0px;
+}
+.footer_layout {
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+}
+footer h3 {
+	padding:15px 0 35px 0;
+}
+footer li {
+	line-height: 2.3em;
+	color: #8B9497;
+}
 
- /*=== END FOOTER STYLES ============================================================ */
+.footerBar .container {
+	margin-top:	15px;
+	margin-bottom: 25px;
+	padding:0;
+	/*border:2px red solid;*/
+}
+.footer_bar {
+	background: #ffffff;
+	padding:20px;
+	margin: 0;
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+	/*border:2px blue solid;*/
+}
+.footer_bar img {
+	width:75px;
+	margin:0;
+	padding:0;
+}
+.footer_bar li {
+	color: #000000;
+	font-size: 12px;
+	display: inline;
+	padding-left: 15px;
+	/*border:2px red solid;*/
+}
+.footer_brand img {
+	fill:#ff00ff;
+	text-shadow: 2px 2px 8px #000000;
+}
+.legals {
+	/*border:2px lime solid;*/
+	text-align: right;
+}
+
+
+	/*=== END FOOTER STYLES ============================================================ */
+
 
 
 
