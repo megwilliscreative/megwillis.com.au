@@ -12,6 +12,16 @@
 	background: #ffffff;
 	z-index: 999;
 	}	
+/* === FONTS === */
+
+@font-face {
+    font-family: 'rockness';
+    src: url('/assets/fonts/rockness-webfont.woff2') format('woff2'),
+         url('/assets/fonts/rockness-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 /* === GLOBAL STYLES ================================= */
 
@@ -23,7 +33,7 @@
 		box-sizing: inherit;
 	}
 	html {
-		font-family: Open Sans, Helvetica, sans serif;
+		font-family: Muli, Open Sans, Helvetica, sans serif;
 		font-size:14px;
 		box-sizing: border-box;
 		color:#000000;
@@ -143,6 +153,7 @@
 	}
 	.hero h1 {
 		color:#ffffff;
+		font-family: 'rockness';
 		/*margin-left:-75px;*/
 		line-height: .7em;
 		padding-bottom: 15px;
