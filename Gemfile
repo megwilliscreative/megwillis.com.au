@@ -6,3 +6,6 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby, :x64_mingw]
 gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw, :x64_mingw]
 
 gem 'middleman-livereload'
+
+# middleman & contentful integration
+gem 'contentful_middleman', '>= 4.0.0'

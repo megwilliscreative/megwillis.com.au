@@ -57,10 +57,10 @@ helpers PostHelpers
 
 # contentful integration
 activate :contentful do |f|
-  # f.space         = { website: ENV['MD_CONTENTFUL_SPACE_ID'] }
-  f.space         = { website: ENV['x1b93ldag9qk'] }
-  # f.access_token  = ENV['MD_CONTENTFUL_API_KEY']
-  f.access_token  = ENV['gNQgR-pS7UxdMHnrVaPbq4ldootVGlwO0qI1Ladnb40']
+  f.space         = { website: ENV['MD_CONTENTFUL_SPACE_ID'] }
+  # f.space         = { website: ENV['x1b93ldag9qk'] }
+  f.access_token  = ENV['MD_CONTENTFUL_API_KEY']
+  # f.access_token  = ENV['gNQgR-pS7UxdMHnrVaPbq4ldootVGlwO0qI1Ladnb40']
 
   f.cda_query     = { include: 1, order: 'sys.createdAt' }
   f.all_entries = true
@@ -77,8 +77,8 @@ activate :contentful do |f|
     # podcastEpisode: 'podcastEpisode',
     # announcement: 'announcement'
   }
-  # f.use_preview_api = !ENV['MD_CONTENTFUL_USE_PREVIEW'].nil? && ENV['MD_CONTENTFUL_USE_PREVIEW'] == "true"
- f.use_preview_api = !ENV['eXjhKrdCuhRTbq-7p7iCV1jfbDRqbQcBsAmcXjUqxqQ'].nil? && ENV['eXjhKrdCuhRTbq-7p7iCV1jfbDRqbQcBsAmcXjUqxqQ'] == "true" 
+  f.use_preview_api = !ENV['MD_CONTENTFUL_USE_PREVIEW'].nil? && ENV['MD_CONTENTFUL_USE_PREVIEW'] == "true"
+ # f.use_preview_api = !ENV['eXjhKrdCuhRTbq-7p7iCV1jfbDRqbQcBsAmcXjUqxqQ'].nil? && ENV['eXjhKrdCuhRTbq-7p7iCV1jfbDRqbQcBsAmcXjUqxqQ'] == "true" 
 
 
 end
