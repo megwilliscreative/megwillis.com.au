@@ -50,35 +50,35 @@ activate :livereload
 # end
 
 # helpers
-require "lib/post_helpers"
-helpers PostHelpers
+# require "lib/post_helpers"
+# helpers PostHelpers
 
 
 
 # contentful integration
-activate :contentful do |f|
-  f.space         = { website: ENV['MD_CONTENTFUL_SPACE_ID'] }
+# activate :contentful do |f|
+  # f.space         = { website: ENV['MD_CONTENTFUL_SPACE_ID'] }
   # f.space         = { website: ENV['x1b93ldag9qk'] }
-  f.access_token  = ENV['MD_CONTENTFUL_API_KEY']
+  # f.access_token  = ENV['MD_CONTENTFUL_API_KEY']
   # f.access_token  = ENV['gNQgR-pS7UxdMHnrVaPbq4ldootVGlwO0qI1Ladnb40']
 
-  f.cda_query     = { include: 1, order: 'sys.createdAt' }
-  f.all_entries = true
-  f.content_types = { 
+  # f.cda_query     = { include: 1, order: 'sys.createdAt' }
+  # f.all_entries = true
+  # f.content_types = { 
     # book: 'book', 
     # video: 'video',
     # supporter: 'supporter',
     # contentBlock: 'contentBlock',
     # speaker: 'speaker',
     # event: 'event',
-    post: 'post',
+    # post: 'post',
     # person: 'person',
     # value: 'value',
     # podcastEpisode: 'podcastEpisode',
     # announcement: 'announcement'
-  }
-  f.use_preview_api = !ENV['MD_CONTENTFUL_USE_PREVIEW'].nil? && ENV['MD_CONTENTFUL_USE_PREVIEW'] == "true"
+  # }
+  # f.use_preview_api = !ENV['MD_CONTENTFUL_USE_PREVIEW'].nil? && ENV['MD_CONTENTFUL_USE_PREVIEW'] == "true"
  # f.use_preview_api = !ENV['eXjhKrdCuhRTbq-7p7iCV1jfbDRqbQcBsAmcXjUqxqQ'].nil? && ENV['eXjhKrdCuhRTbq-7p7iCV1jfbDRqbQcBsAmcXjUqxqQ'] == "true" 
 
 
-end
+# end

@@ -8,4 +8,4 @@ gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw, :x64_mingw]
 gem 'middleman-livereload'
 
 # middleman & contentful integration
-gem 'contentful_middleman', '>= 4.0.0'
+# gem 'contentful_middleman', '>= 4.0.0'
