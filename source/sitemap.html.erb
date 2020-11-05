@@ -1,0 +1,9 @@
+---
+title: "Sitemap"
+---
+
+<% sitemap.resources.each do |f| %>
+   <% if f.content_type.include? "html" %>
+      	<li><a href="<%= f.path %>"></a></li>
+	<% end %>
+<% end %>
