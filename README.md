@@ -1,10 +1,10 @@
-# MWC-JAMstack
+# MW_v1-JAMstack
  portoflio
 
 _____________________
 TERMINAL COMMANDS
 
-<!-- cd ~/Development/mwc -->
+<!-- cd ~/Development/mw -->
 
 gem install unsplash
 

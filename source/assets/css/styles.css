@@ -12,14 +12,49 @@
 	background: #313131;
 	z-index: 999;
 	}	
+#service_grid .container{
+	margin-top:0px !important;
+	
+	padding:0;
+	max-width:100%;
+	
+}
+.serivce_grid {
+	display:grid;
+	grid-template-columns:repeat(2,2fr);
+	text-align: center;
+	align-items: center;
+	margin:0;
+	
+}
+/* .service_grid>div { */
+.service_item {
+	padding:35px 0;
+}
+.olive {
+	background-color:#808000;
+}
+.white {
+	background-color: white;
+}
+.grey_light {
+	background-color: #f7f7f7;
+}
+.service_item svg {
+	padding: 15px 0;
+}
 /* === FONTS === */
 
 @font-face {
-    font-family: 'rockness';
-    src: url('/assets/fonts/rockness-webfont.woff2') format('woff2'),
-         url('/assets/fonts/rockness-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'rockness';
+	src: url('/assets/fonts/rockness-webfont.woff2') format('woff2'),
+		url('/assets/fonts/rockness-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Baskerville';
+	/* src: url('/assets/fonts/rockness-webfont.woff2') format('woff2'), */
 }
 
 /* === GLOBAL STYLES ================================= */
@@ -32,7 +67,8 @@
 		box-sizing: inherit;
 	}
 	html {
-		font-family: Muli, Open Sans, Helvetica, sans serif;
+		/* font-family: Muli, Open Sans, Helvetica, sans serif; */
+		font-family: Baskerville, Georgia, 'Times New Roman', Times, serif;
 		font-size:14px;
 		box-sizing: border-box;
 		color:#000000;
@@ -102,10 +138,11 @@
 	}
 	.main_nav {
 		display: grid;
-		grid-template-columns: repeat(7,1fr);
+		grid-template-columns: repeat(5,1fr);
 		align-items: center;
 		/*justify-content: space-between;*/
 		text-align: center;
+		/* margin: auto 0; */
 	}
 	.nav_logo {
 		/*grid-col:;*/
@@ -151,7 +188,7 @@
 		/*border:2px blue solid;*/
 	}
 
-  /*=== end global styles ================================*/
+/*=== end global styles ================================*/
 
 /*- - @HOME - - */
 	
@@ -169,8 +206,9 @@
 		color:#ffffff;
 		font-family: 'rockness';
 		/*margin-left:-75px;*/
-		line-height: 1.7em;
+		line-height: 1.2em;
 		padding-bottom: 15px;
+		max-width:40%;
 	}
 	.hero h2 {
 		color:#ffffff;
