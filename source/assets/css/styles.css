@@ -148,6 +148,7 @@
 }
 .status_table{
 	/*border:solid 2px #ff00ff;*/
+	max-width: 45%;
 }
 
 /*- - @HOME - - */
