@@ -130,8 +130,9 @@
 }
 #project_status .content {
 	display:grid;
-	grid-template-columns: 1fr 2fr;
-	border:solid 2px #ff00ff;
+	grid-template-columns: 1fr 1fr;
+	/*border:solid 2px #ff00ff;*/
+
 }
 @media {
 	#project_status .content {
@@ -145,7 +146,10 @@
 	overflow: hidden;
 	max-width: 45%;
 }
-.status_table{border:solid 2px #ff00ff;}
+.status_table{
+	/*border:solid 2px #ff00ff;*/
+}
+
 /*- - @HOME - - */
 	
 	.hero {
