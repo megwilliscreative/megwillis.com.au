@@ -143,6 +143,7 @@
 .status_chart{
 	border:solid 2px #ff00ff;
 	overflow: hidden;
+	max-width: 45%;
 }
 .status_table{border:solid 2px #ff00ff;}
 /*- - @HOME - - */
