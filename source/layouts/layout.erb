@@ -31,18 +31,8 @@
       <%= partial "partials/header" %>
       <%= yield %>
       <%= partial "partials/footer" %>
-
-
-
-
-      <div class="site_notice">
-        <ul>
-          <li>
-            <a href="/index.html">Home</a>
-            <a href="/contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
+      
+      <%= partial "partials/builder_menu" %>
 
       <%= javascript_include_tag "/assets/js/site.js" %>
   </body>

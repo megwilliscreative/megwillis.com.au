@@ -2,8 +2,18 @@
 title: "Sitemap"
 ---
 
-<% sitemap.resources.each do |f| %>
-   <% if f.content_type.include? "html" %>
-      	<li><a href="<%= f.path %>"></a></li>
-	<% end %>
-<% end %>
+
+
+<section>
+	<div class="container">
+		<div>
+			<h2>Sitemap</h2>
+			<% sitemap.resources.each do |f| %>
+			   <% if f.content_type.include? "html" %>
+			      	<li><a href="<%= f.path %>"></a></li>
+				<% end %>
+			<% end %>
+
+		</div>
+	</div>
+</section>
