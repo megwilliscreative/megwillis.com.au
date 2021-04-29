@@ -1,7 +1,14 @@
 /*COLOUR CODES*/
 	/*Olive green #445626*/
 
-
+@font-face {
+		    font-family: 'Rockness';
+		    src: url('/assets/fonts/Rockness.woff2') format('woff2'),
+		        url('/assets/fonts/Rockness.woff') format('woff'),
+		        url('/assets/fonts/Rockness.ttf') format('truetype');
+		    font-weight: normal;
+		    font-style: normal;
+		}
 /* === GLOBAL STYLES ================================= */
 
 	*,
