@@ -74,18 +74,31 @@ body {
 		grid-template-columns: 1fr;	
 		/*height:500px;*/
 		max-width: 90%;
+		justify-content: center;
 	}
 	.status_chart {
+		zoom: 0.85;
+		-moz-transform: scale(0.85);
+		-moz-transform-origin: 0 0;
+		-o-transform: scale(0.85);
+		-o-transform-origin: 0 0;
+		-webkit-transform: scale(0.85);
+		-webkit-transform-origin: 0 0;
+
 		height: 380px;
+		min-width: 400px;
 	}
 	.status_table {
+		min-height: 400px;
 		height: 50vh;
+		overflow:hidden;
 	}
 	#project_hero h2 {
 		font-family: 'Rockness', cursive;
 		font-size:40px;
 	}
-	body {background-color:#f7f7f7;
+	body {
+		background-color:#f7f7f7;
 	}
 }
 
