@@ -130,8 +130,8 @@
 }
 #project_status .content {
 	width:100%;
-	display:grid;
-	grid-template-columns: 1fr, 2fr;
+	display:flex;
+	/*grid-template-columns: 1fr, 2fr;*/
 	border:solid 2px #ff00ff;
 
 }
