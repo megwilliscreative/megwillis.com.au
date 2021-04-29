@@ -33,7 +33,12 @@ body {
 }
 /* Typography ————————————————————————————————————————————————————*/
 @font-face {
-	font-family: 'Rockness', Helvetica, Nunito Sans, Tahoma, sans-serif;
+    font-family: 'Rockness';
+    src: url('/assets/fonts/Rockness.woff2') format('woff2'),
+        url('/assets/fonts/Rockness.woff') format('woff'),
+        url('/assets/fonts/Rockness.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 #project_hero h2, #project_hero h3 {
 	color:white;
