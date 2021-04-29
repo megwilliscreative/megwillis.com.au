@@ -2,13 +2,13 @@
 	/*Olive green #445626*/
 
 @font-face {
-		    font-family: 'Rockness';
-		    src: url('/assets/fonts/Rockness.woff2') format('woff2'),
-		        url('/assets/fonts/Rockness.woff') format('woff'),
-		        url('/assets/fonts/Rockness.ttf') format('truetype');
-		    font-weight: normal;
-		    font-style: normal;
-		}
+    font-family: 'Rockness';
+    src: url('/assets/fonts/Rockness.woff2') format('woff2'),
+        url('/assets/fonts/Rockness.woff') format('woff'),
+        url('/assets/fonts/Rockness.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 /* === GLOBAL STYLES ================================= */
 
 	*,
@@ -137,16 +137,16 @@
 }
 #project_status .content {
 	width:100%;
-	display:flex;
-	/*grid-template-columns: 1fr, 2fr;*/
+	display:grid;
+	grid-template-columns: 2fr 3fr;
 	border:solid 2px #ff00ff;
 
 }
-@media {
+@media only screen and (max-width: 767px) {
 	#project_status .content {
 		display:grid;
 		grid-template-columns: 1fr;
-		border:solid 2px green;
+		/*border:solid 2px green;*/
 	}
 }
 .status_chart{
@@ -158,6 +158,13 @@
 	border:solid 2px #ff00ff;
 	max-width: 45%;
 }
+
+
+
+
+
+
+
 
 /*- - @HOME - - */
 	

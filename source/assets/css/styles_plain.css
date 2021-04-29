@@ -6,7 +6,7 @@
 	box-sizing: inherit;
 }
 section	{
-	padding:35px 0;
+	padding:35px 15px;
 }
 .container {
 	max-width:1280px;
@@ -24,7 +24,7 @@ body {
 /* Components ——————————————————————————————————————————————————*/
 #project_hero {
 	margin:auto 0;
-	padding:10vh 0 5vh 0;
+	padding:10vh 15px 5vh 15px;
 	/*background:olive;*/
 	background-image: url("/assets/imgs/shelf-1-2200px.jpg");
 	background-repeat: no-repeat;
@@ -59,4 +59,29 @@ body {
 	padding:15px 20px;
 	background-color:white;
 }
+@media only screen and (max-width: 767px) {
+	.container {
+		min-width: 300px;
+		/*border:3px red solid;*/
+	}
+	#project_status .content {
+		display:grid;
+		grid-template-columns: 1fr;	
+		/*height:500px;*/
+		max-width: 90%;
+	}
+	.status_chart {
+		height: 380px;
+	}
+	.status_table {
+		height: 50vh;
+	}
+	#project_hero h2 {
+		font-family: 'Rockness', cursive;
+		font-size:40px;
+	}
+	body {background-color:#f7f7f7;
+	}
+}
+
 
