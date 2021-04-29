@@ -35,7 +35,6 @@ body {
 @font-face {
 	font-family: 'Rockness', Helvetica, Nunito Sans, Tahoma, sans-serif;
 }
-
 #project_hero h2, #project_hero h3 {
 	color:white;
 }
@@ -48,7 +47,7 @@ body {
 	display: grid;
 	grid-template-columns: 2fr 3fr;
 	grid-gap: 15px;
-	height:80vh;
+	height:60vh;
 }
 .status_chart {
 	height:100%;
@@ -57,5 +56,7 @@ body {
 .status_table {
 	height:100%;
 	width:100%;
+	padding:15px 20px;
+	background-color:white;
 }
 
