@@ -2,57 +2,245 @@
 title: Contact Meg Willis
 ---
 
+<style type="text/css">
+	/*~~~~~~ Headings ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+		h1 {
+			font-weight: 300;
+		}
+		h2 {
+			font-weight: lighter;
+			font-family: Baskerville, Georgia, 'Times New Roman', Times, serif;
+			font-size: 45px;
+			/*margin:15px 0 35px 0;*/
+			line-height: 1.5em;
+		}
+		h3 {
+			color: #313131;
+			text-transform: uppercase;
+			font-size: 16px;
+			line-height: 1.7em;
+			font-family: 'Open Sans', Helvetica, sans-serif;
+			font-weight: normal;
+			margin:15px 0;
+		}
+		.olive h3 {
+			color:white;
+		}
+		footer h3 {
+			padding:15px 0 35px 0;
+		}
+		h4 {
+			text-transform: uppercase;
+			color:grey;
+			font-size: 18px;
+			line-height: 2em;
+			margin-top:15px;
+			margin-bottom: 5px;
+			font-weight: 700;
+		}
+		h5 {
+			font-size: 14px;
+			text-transform: uppercase;
+			margin-top:15px;
+			/*font-weight: 700;*/
+			}
+		h6 {
+			font-size: 14px;
+			font-weight: 700;
+		}
+		p {
+			font-size:14px;
+			margin:8px 0 5px 0;
+		}
+		.para1 {
+			font-size: 18px;
+			line-height: 1.5em;
+			margin:15px 0 ;
+		}
+		.handwritten {
+			font-weight: normal;
+			font-family: 'Rockness', helvetica, sans-serif;
+			font-size: 65px;
+			/*margin:15px 0 35px 0;*/
+			line-height: 1.5em;
+
+			/*-webkit-transform: rotate(0deg)!important;*/
+			/*transform: rotate(0deg);*/
+
+		}
+		blockquote {
+			margin:35px 0;
+			font-style: italic;
+			font-size: 22px;
+			line-height: 1.5em;
+			color: #808000;
+			text-align: center;
+		}
+		#reviews img {
+			width:30px;
+			opacity:.5;
+			margin:15px;
+		}
+		@media only screen and (max-width: 767px) {
+			h2 {
+				font-size: 35px;
+				line-height: 1.3em; 
+			}
+			.handwritten {
+				line-height: 1em !important;
+				transform: rotate(-5deg);
+			}
+		}
+	/*~~~~~~ Forms ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+		input::placeholder, input::textarea, input::date {
+			color:#777;
+			font-size: 18px !important;	
+		}
+		#new_project .content {
+			margin:0 auto;
+		}
+		#new_project form {
+			display:grid;
+			grid-template-columns: repeat(2,1fr);
+			grid-gap: 15px;
+			margin:35px auto;
+			border:0px;
+		}
+		input {
+			padding: 28px;
+			border:0px;
+			border-bottom: 1px solid #777;
+			background: none;
+		}
+		#new_project form textarea {
+			min-height:75px;
+			width:100% !important;
+			
+		}
+		#new_project button {
+			margin:0 auto;
+			width: 75%;
+			max-width: 450px;
+			grid-column-start: 1;
+  			grid-column-end: 3;
+			margin-top:35px !important;
+		}
+		/*forms on home page*/
+		.proj_des {
+			grid-column-start: 1;
+			grid-column-end:3;
+		}
+		#page_intro h1 {
+			font-size: 2em;
+		}
+		#thanks {
+			text-align: center;
+			padding:3vh 0;
+		}
+		/*~~~ forms on mobile ~~~*/
+		@media only screen and (max-width: 767px) {
+			input {
+				margin:15px;
+			}
+			#new_project form {
+				display:block;
+			}
+		}
+		/*~~~~~~ Design Elements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+		.divider {
+			margin:10px 0;
+			width: 75px;
+			border:0px;
+			border-bottom:5px solid white;
+		}
+	/*~~~~~~ Buttons ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+		button {
+			color:#4d4c18;
+			background: #ffffff;
+			padding: 15px 16px;
+			margin:15px 0px;
+			font-weight: 500;
+			font-size:16px;
+			text-transform: uppercase;
+			border:0px;
+		}
+
+		.button {
+			color:#4d4c18;
+			background: #ffffff;
+			padding: 10px 18px;
+			margin:15px;
+			font-family: 'Open Sans';
+			font-weight: 500;
+			font-size:16px;
+			text-transform: uppercase;
+			border:0px;
+		}
+		.button:hover {
+			color:#4d4c18;
+			background:#f7f7f7;
+		}
+		.cta {
+			color: white;
+			background: #57ffc1;
+			padding:10px 15px;
+			margin:0;
+			text-shadow: none !important;
+			box-shadow: 2px 2px 8px #000000;
+		}	
+	/*~~~~~~ Colours ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+		/*Olive green #808000*/
+		/*Fluro Green: #57ffc1;*/
+		.olive  {
+			background-color:#4d4c18;
+			color:#fff;
+		}
+		.white {
+			background-color: white;
+			color:#808000;
+		}
+		.grey_light {
+			background-color: #f7f7f7;
+		}
+</style>
+
+<section>
+	<div class="container">
+		<div class="content">
+			<h2>Feedback</h2>
+		</div>
+	</div>
+</section>
+
 <!-- HEADER IMAGE -->
-<section class="hero">
+<!-- <section class="hero">
 	<div class="container">
 		<div class="">
 			<h2 style="color:white;">Contact</h2>
 		</div>
 	</div>
-</section>
+</section> -->
 
-<!-- CONTACT FORM -->
-<section id="contact_mw">
-	<div class="container">
-		<div class="content">
-			<div>
-				<h3>Get in touch</h3>
-				<p><strong>e</strong>. <a href="mailto:meg@megwillis.com.au">meg@megwillis.com.au</a></p>
-				<p><strong>ph</strong>. <a href="tel:61434513333">0434 513 333</a></p>
-				<p>Toowoomba Queensland 4350</p>
-			</div>
-			<div>
-				<h3>Whats on your mind?</h3>
-				<form action="/thanks.html" class="email-form" name="contact_mw" method="POST" data-netlify="true" netlify-honeypot="bot-field">
-					<div hidden aria-hidden="true">
-						<label>
-						  Don’t fill this out if you're human: 
-						  <input name="bot-field" />
-						</label>
-					</div>
-					<div>
-						<input type="name" name="fullName" placeholder="Full Name">	
-					<input type="email" name="email" placeholder="Email"  id="email" required />
-					<!-- <input type="text" name="contact_message" placeholder="Message"> -->
-					<textarea rows="4" name="contact_message" placeholder="Message"></textarea>
-					<button class="olive" type="submit">Send</button>
-					</div>
-				</form>
-			</div>
-		</div>
-	</div>
-</section>
 
-<section id="faq_contact">
-	<div class="container">
-		<h3>FAQ</h3>
-		<div class="content">
-			<div><p><%= lorem.sentences 5 %></p></div>
-			<div><p><%= lorem.sentences 5 %></p></div>
-			<div><p><%= lorem.sentences 5 %></p></div>
-			<div><p><%= lorem.sentences 5 %></p></div>
-			<div><p><%= lorem.sentences 5 %></p></div>
-		</div>
-	</div>
-</section>
 
+
+<!-- FORM -->
+<!-- start something project questions -->
+<section id="new_project" class="grey_light" >
+  <div class="container">
+    <div class="content">
+      <!-- <h3>New</h3> -->
+      <!-- <h2>Thinking of starting a project?</h2> -->
+      <form action="/thanks.html" class="email_form" name="Project Feedback" method="POST" data-netlify="true">
+        <input type="text" name="fName" placeholder="First Name">
+        <!-- <input type="tel" name="phone" placeholder="Phone"> -->
+        <input type="email" name="email" placeholder="Email">
+        <input type="textarea" name="pDescription" placeholder="Project Description" class="proj_des" col=4>
+        <input type="textarea" name="pFeedback" placeholder="Project Feedback" class="proj_des" col=4>
+        
+        <button type="submit" class=" olive">Send Feedback</button>
+        
+      </form>
+    </div>
+  </div>
+</section>
