@@ -1,0 +1,58 @@
+---
+title: Contact Meg Willis
+---
+
+<!-- HEADER IMAGE -->
+<section class="hero">
+	<div class="container">
+		<div class="">
+			<h2 style="color:white;">Contact</h2>
+		</div>
+	</div>
+</section>
+
+<!-- CONTACT FORM -->
+<section id="contact_mw">
+	<div class="container">
+		<div class="content">
+			<div>
+				<h3>Get in touch</h3>
+				<p><strong>e</strong>. <a href="mailto:meg@megwillis.com.au">meg@megwillis.com.au</a></p>
+				<p><strong>ph</strong>. <a href="tel:61434513333">0434 513 333</a></p>
+				<p>Toowoomba Queensland 4350</p>
+			</div>
+			<div>
+				<h3>Whats on your mind?</h3>
+				<form action="/thanks.html" class="email-form" name="contact_mw" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+					<div hidden aria-hidden="true">
+						<label>
+						  Don’t fill this out if you're human: 
+						  <input name="bot-field" />
+						</label>
+					</div>
+					<div>
+						<input type="name" name="fullName" placeholder="Full Name">	
+					<input type="email" name="email" placeholder="Email"  id="email" required />
+					<!-- <input type="text" name="contact_message" placeholder="Message"> -->
+					<textarea rows="4" name="contact_message" placeholder="Message"></textarea>
+					<button class="olive" type="submit">Send</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section id="faq_contact">
+	<div class="container">
+		<h3>FAQ</h3>
+		<div class="content">
+			<div><p><%= lorem.sentences 5 %></p></div>
+			<div><p><%= lorem.sentences 5 %></p></div>
+			<div><p><%= lorem.sentences 5 %></p></div>
+			<div><p><%= lorem.sentences 5 %></p></div>
+			<div><p><%= lorem.sentences 5 %></p></div>
+		</div>
+	</div>
+</section>
+
