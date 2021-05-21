@@ -47,6 +47,26 @@ body {
 	font-family: 'Rockness', cursive;
 	font-size:60px;
 }
+
+
+/* Lists –——————————————————————————————————————————————*/
+	ul {
+		padding:5px 0px;
+		list-style-position: outside;
+	}
+	ol {
+		padding:5px 0px;
+		list-style-position: outside;
+	}
+	li {
+		line-height: 1.7em;
+		margin:0 0 0 25px;
+	}	
+	li::marker {
+		color:#4d4c18;
+	}
+
+
 /* Page content –——————————————————————————————————————————————*/
 #project_status .content {
 	display: grid;
@@ -63,6 +83,10 @@ body {
 	width:100%;
 	padding:15px 20px;
 	background-color:white;
+}
+#project_goals .content {
+	display:grid;
+	grid-template-columns: 1fr 1fr;
 }
 @media only screen and (max-width: 767px) {
 	.container {
